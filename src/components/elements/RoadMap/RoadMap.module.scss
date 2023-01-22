@@ -1,0 +1,144 @@
+.title {
+  color: #FFC940;
+}
+
+.title-box {
+  margin-bottom: 100px;
+}
+
+.roadmap-card {
+  margin: 0 auto 20px auto;
+  border-radius: 45px;
+  position: relative;
+  z-index: 100;
+  padding: 10px;
+  max-width: 1000px;
+
+  &.turquoise {
+    background: #66DBBF;
+    color: #0A5845;
+  }
+
+  &.blue {
+    background: #66CDDB;
+    color: #085A65;
+  }
+
+  &.yellow {
+    background: #DBC166;
+    color: #5E4B0A;
+  }
+
+  &.pink {
+    background: #F48FD8;
+    color: #722F5F;
+  }
+
+  &.purple {
+    background: #B998FF;
+    color: #362066;
+  }
+}
+
+.roadmap-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 50px;
+}
+
+.progress {
+  background: #FFF;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+  color: #000;
+  padding: 13px 23px;
+}
+
+.roadmap-card__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  position: relative;
+}
+
+.roadmap-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s linear;
+  padding-left: 150px;
+}
+
+.roadmap-body__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFF;
+  margin-bottom: 21px;
+  position: relative;
+  margin-top: 5px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 641px;
+    top: -5px;
+  }
+
+  &.turquoise-b {
+    &::before {
+      background: #0A5845;
+    }
+  }
+
+  &.blue-b {
+    &::before {
+      background: #085A65;
+    }
+  }
+
+  &.yellow-b {
+    &::before {
+      background: #5d4b0a;
+    }
+  }
+
+  &.pink-b {
+    &::before {
+      background: #722f5f;
+    }
+  }
+
+  &.purple-b {
+    &::before {
+      background: #362066;
+    }
+  }
+}
+
+.roadmap-card__list {
+  li {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 15px;
+    position: relative;
+
+    span {
+      font-weight: 700;
+    }
+
+    &::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: #FFF;
+      left: -20px;
+      top: 9px;
+      position: absolute;
+      border-radius: 50%;
+    }
+  }
+}

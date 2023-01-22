@@ -1,0 +1,35 @@
+@import "../../../assets/scss/var";
+
+.logo {
+  position: relative;
+}
+.title {
+  font-family: $font-title;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.about {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  max-width: 200px;
+}
+
+.key {
+  position: absolute;
+  top: -35px;
+  left: -51px;
+  width: 68px;
+  height: 64px;
+  animation:move infinite linear .7s;
+  animation-direction:alternate;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@keyframes move{0%{transform:rotate(0);}100%{transform:rotate(10deg);}}

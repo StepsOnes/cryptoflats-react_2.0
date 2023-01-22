@@ -1,0 +1,41 @@
+.footer-about {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.terms {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+  span {
+    font-weight: 700;
+  }
+}
+
+.copyright {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+
+  span {
+    position: relative;
+    font-weight: 700;
+    margin-right: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #FFF;
+      right: -10px;
+      border-radius: 50%;
+    }
+  }
+}

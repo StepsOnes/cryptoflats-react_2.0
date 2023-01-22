@@ -1,0 +1,13 @@
+.social-icons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+
+  li > a >img {
+      //max-width: 100%;
+      //height: auto;
+    width: 30px;
+    height: 30px;
+    }
+
+}

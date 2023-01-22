@@ -1,0 +1,278 @@
+@import "../../../assets/scss/animation";
+@import "../../../assets/scss/mixin";
+
+.header {
+  position: relative;
+  max-height: 1050px;
+  background: #F4E9E9;
+}
+
+.row {
+  display: flex;
+}
+
+.about-rooms {
+  //width:62%;
+  overflow: hidden;
+  padding-bottom: 41%;
+  position: relative;
+  height: 0;
+
+  video {
+    max-width: 100%;
+    height: 973px;
+    display: block;
+    margin-top: -4px;
+  }
+
+  @include _2560 {
+    width:59%;
+    padding-bottom: 40%;
+    video {
+      height: 1032px;
+    }
+  }
+
+  @include _1980 {
+    width:63%;
+    video {
+      height: auto;
+    }
+  }
+}
+
+.about-nft {
+  width: 51%;
+  height: auto;
+  background: #F4E9E9;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  padding-top: 12%;
+  color: #000;
+}
+
+.drop-name {
+  font-size: 56px;
+  line-height: 76px;
+  font-weight: 700;
+  margin-bottom: 13px;
+  position: relative;
+  z-index: 999;
+}
+
+.about-drop {
+  color: #626262;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 49px;
+  margin-bottom: 33px;
+  position: relative;
+  z-index: 10;
+}
+
+.drop-btn {
+  font-family: 'Polly Rounded';
+  font-weight: bold;
+  display: inline-block;
+  padding: 14px 43px;
+  line-height: 32px;
+  background: #0f6eb2;
+  box-shadow: 3px 6px 6px rgb(0 0 0 / 15%);
+  border-radius: 50px;
+  text-decoration: none;
+  color: #FFF;
+  -webkit-transition: transform .4s;
+  -moz-transition: transform .4s;
+  -ms-transition: transform .4s;
+  -o-transition: transform .4s;
+  transition: transform .4s;
+  will-change: transform;
+  z-index: 999;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  font-size: 35px;
+
+  &:hover {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+}
+
+.about-rooms__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #F3F3F3;
+  width: 100%;
+  height: 100%;
+  padding-top: 23%;
+}
+
+.main-title {
+  font-size: 52px;
+  line-height: 51px;
+  font-weight: bold;
+}
+
+.min-title {
+  font-size: 36px;
+  line-height: 51px;
+  margin-top: 22px;
+  font-weight: bold
+}
+
+.text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  margin-top: 130px;
+}
+
+.hashtags {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+  gap: 70px;
+  color: #349EEB;
+  font-weight: 600;
+}
+
+.hashtag {
+  position: relative;
+  animation: shake 1.5s;
+  animation-iteration-count: infinite;
+
+  &.hashtag-1 {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  &.hashtag-2 {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+  }
+
+  &.hashtag-3 {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.4s;
+  }
+
+  &.hashtag-4 {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.3s;
+  }
+}
+
+.dec-anim {
+  position: absolute;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.sofa {
+  img {
+    animation: fade-move1 infinite linear 7s alternate;
+  }
+
+  @include _2560 {
+    top: 0px;
+    transform: translateX(-100px);
+  }
+
+  @include _1980 {
+    top: -50px;
+    max-width: 440px;
+    max-height: 471px;
+  }
+}
+
+.armchair {
+  img {
+    animation: fade-move2 infinite linear 10s alternate;
+  }
+
+  @include _2560 {
+    top: -30px;
+    left: 65%;
+    transform: translateX(-65%);
+  }
+
+  @include _1980 {
+    //max-width: 555px;
+    //max-height: 471px;
+  }
+}
+
+.chess {
+  top: 0;
+  right: 0;
+  filter: blur(3px);
+
+  img {
+    animation: fade-move3 infinite linear 4s alternate;
+  }
+}
+
+.diamond-card {
+  filter: blur(3px);
+
+  @include _2560 {
+    transform: rotate(-25.54deg) translateX(-110px);
+    max-width: calc(550.33px - 5%);
+    max-height: calc(366.89px - 5%);
+    left: 0;
+    bottom: 110px;
+  }
+
+  @include _1980 {
+    max-width: calc(550.33px - 20%);
+    max-height: calc(366.89px - 20%);
+    bottom: 140px;
+  }
+}
+
+
+.gold-card {
+  @include _2560 {
+    bottom: 250px;
+    right: 0px;
+    max-width: 420px;
+    max-height: 289.18px;
+    transform: rotate(32.27deg) translateX(100px);
+  }
+
+  @include _1980 {
+    max-width: 320px;
+    max-height: 289.18px;
+    bottom: 100px;
+  }
+}
+
+.table {
+  img {
+    animation: fade-move4 infinite linear 4s alternate;
+  }
+
+  @include _2560 {
+    bottom: 0;
+    left: 55%;
+    transform: translateX(-55%);
+  }
+
+  @include _1980 {
+    max-width: 156px;
+    max-height: 258px;
+  }
+}

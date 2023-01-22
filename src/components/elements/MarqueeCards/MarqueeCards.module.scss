@@ -1,0 +1,22 @@
+@import "../../../assets/scss/mixin";
+
+.marquee-card {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  @include _2560 {
+    max-width: 232.77px;
+    max-height: 232.77px;
+  }
+
+  @include _1980 {
+    max-width: 205px;
+    max-height: 205px;
+  }
+}
+
+.marqueeCards {
+  position: relative;
+}

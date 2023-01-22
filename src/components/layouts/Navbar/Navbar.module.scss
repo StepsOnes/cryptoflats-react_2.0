@@ -1,0 +1,41 @@
+@import "../../../assets/scss/var";
+@import "../../../assets/scss/mixin";
+
+.navbar {
+  padding: 80px 0 40px 0;
+  background: $header-bg;
+}
+
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include _2560 {
+    max-width: 1950px;
+  }
+
+  @include _1980 {
+    max-width: 1250px;
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 55px;
+
+  li > a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFF;
+    text-decoration: none;
+  }
+}
+
+.wrapper {
+  display: flex;
+  gap: 75px;
+  align-items: center;
+}

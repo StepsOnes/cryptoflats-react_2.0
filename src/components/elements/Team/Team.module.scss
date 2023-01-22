@@ -1,0 +1,98 @@
+.title {
+  color: #AEDC2D;
+}
+
+.title-box {
+  margin-bottom: 70px;
+}
+
+.text {
+  margin-bottom: 70px;
+}
+
+.persons-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 200px;
+}
+
+.persons-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about {
+  margin-top: 60px;
+  max-width: 252px;
+}
+
+.img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+}
+
+.img1 {
+  animation: change_color_01 infinite 8s linear;
+  animation-fill-mode: both;
+  animation-direction:alternate;
+}
+
+.img2{
+  animation: change_color_02 infinite 8s linear;
+  animation-fill-mode: both;
+  animation-direction:alternate;
+}
+
+@keyframes change_color_01 {
+  0% {
+    border: 4px solid yellow;
+  }
+
+  25% {
+    border: 4px solid #00ff22;
+  }
+
+  50% {
+    border: 4px solid #0537f6;
+  }
+
+  75% {
+    border: 4px solid #f66105;
+  }
+
+  100% {
+    border: 4px solid #e50d82;
+  }
+}
+
+@keyframes change_color_02 {
+  0% {
+    border: 4px solid #0cf8ff;
+  }
+
+  25% {
+    border: 4px solid #8401d2;
+  }
+
+  50% {
+    border: 4px solid #000000;
+  }
+
+  75% {
+    border: 4px solid #f60505;
+  }
+
+  100% {
+    border: 4px solid #ffffff;
+  }
+}
