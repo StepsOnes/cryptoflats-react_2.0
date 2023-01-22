@@ -1,0 +1,135 @@
+@import "assets/scss/reset";
+@import "assets/fonts/stylesheet";
+@import "assets/scss/var";
+@import "assets/scss/mixin";
+
+
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+
+body {
+  background: $body-bg;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.container {
+  max-width: 1324px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-family: 'Polly Rounded';
+}
+
+.marquee {
+  min-width: 0;
+}
+
+.marquee-container  {
+  overflow: hidden;
+}
+
+.section-padding {
+  padding: 60px 0;
+}
+
+.section-title {
+  font-family: 'Polly Rounded';
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.accordion-button {
+  background-color: transparent;
+  color: #FFF;
+  border-top: 1px solid #FFF;
+  font-weight: 700;
+  padding: 7px 0 17px 0;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.accordion-item {
+  background: transparent;
+  border: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #FFF;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+  color: #FFF;
+  border-color: #FFF;
+  border-radius: 0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom: 1px solid #FFF;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.accordion-body {
+  color: #BDBDBD;
+  padding: 40px 0 55px 0;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  background: none;
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #FFF;
+  position: absolute;
+  transform: rotate(90deg);
+  transition: .5s;
+  right: 20px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  //transform: rotate(90deg);
+}
+
+.accordion-button::before {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #FFF;
+  position: absolute;
+  transition: .5s;
+  right: 20px;
+}
+
