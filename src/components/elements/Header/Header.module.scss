@@ -59,6 +59,11 @@
   margin-bottom: 13px;
   position: relative;
   z-index: 999;
+
+  @include _1440 {
+    font-size: 36px;
+    line-height: 49px;
+  }
 }
 
 .about-drop {
@@ -69,6 +74,11 @@
   margin-bottom: 33px;
   position: relative;
   z-index: 10;
+
+  @include _1440 {
+    font-size: 24px;
+    line-height: 33px;
+  }
 }
 
 .drop-btn {
@@ -102,6 +112,11 @@
     -o-transform: scale(1.03);
     transform: scale(1.03);
   }
+
+  @include _1440 {
+    font-size: 30px;
+    line-height: 32px;
+  }
 }
 
 .about-rooms__text {
@@ -119,13 +134,24 @@
   font-size: 52px;
   line-height: 51px;
   font-weight: bold;
+
+  @include _1440 {
+    font-size: 32px;
+    line-height: 51px;
+  }
 }
 
 .min-title {
   font-size: 36px;
   line-height: 51px;
   margin-top: 22px;
-  font-weight: bold
+  font-weight: bold;
+
+  @include _1440 {
+    font-size: 24px;
+    line-height: 38px;
+    margin-top: 0px;
+  }
 }
 
 .text {
@@ -133,6 +159,12 @@
   font-size: 32px;
   line-height: 44px;
   margin-top: 130px;
+
+  @include _1440 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 70px;
+  }
 }
 
 .hashtags {
@@ -196,6 +228,14 @@
     max-width: 440px;
     max-height: 471px;
   }
+
+  @include _1700 {
+    max-width: 380px;
+  }
+
+  @include _1550 {
+    max-width: 340px;
+  }
 }
 
 .armchair {
@@ -209,16 +249,26 @@
     transform: translateX(-65%);
   }
 
-  @include _1980 {
-    //max-width: 555px;
-    //max-height: 471px;
+  @include _1700 {
+    max-width: 240px;
   }
 }
 
 .chess {
-  top: 0;
-  right: 0;
   filter: blur(3px);
+
+  @include _2560 {
+    top: 0;
+    right: 0;
+  }
+
+  @include _1980 {
+    max-width: 250px;
+  }
+
+  @include _1550 {
+    max-width: 200px;
+  }
 
   img {
     animation: fade-move3 infinite linear 4s alternate;
@@ -241,6 +291,16 @@
     max-height: calc(366.89px - 20%);
     bottom: 140px;
   }
+
+  @include _1700 {
+    max-width: calc(550.33px - 30%);
+    max-height: calc(366.89px - 30%);
+  }
+
+  @include _1550 {
+    max-width: calc(550.33px - 40%);
+    max-height: calc(366.89px - 40%);
+  }
 }
 
 
@@ -258,6 +318,15 @@
     max-height: 289.18px;
     bottom: 100px;
   }
+
+  @include _1700 {
+    max-width: 250px;
+  }
+
+  @include _1550 {
+    max-width: 240px;
+    transform: rotate(32.27deg) translateX(50px);
+  }
 }
 
 .table {
@@ -274,5 +343,9 @@
   @include _1980 {
     max-width: 156px;
     max-height: 258px;
+  }
+
+  @include _1550 {
+    max-width: 126px;
   }
 }
