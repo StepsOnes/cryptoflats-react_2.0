@@ -3,7 +3,16 @@
 @import "assets/scss/var";
 @import "assets/scss/mixin";
 
+header.header,
+main.main,
+footer.footer {
+  overflow: hidden;
+  width: 100vw;
+}
 
+.lock {
+  overflow: hidden;
+}
 
 html, body {
   scroll-behavior: smooth;
@@ -20,6 +29,11 @@ body {
   font-family: 'Open Sans';
   font-size: 24px;
   line-height: 33px;
+
+  @include _768 {
+    font-size: 17px;
+    line-height: 23px;
+  }
 }
 
 .container {
@@ -42,6 +56,10 @@ body {
 
 .section-padding {
   padding: 60px 0;
+
+  @include _768 {
+    padding: 30px 0;
+  }
 }
 
 .section-title {
@@ -50,6 +68,10 @@ body {
   font-size: 30px;
   line-height: 38px;
   text-transform: uppercase;
+
+  @include _1200 {
+    text-align: center;
+  }
 }
 
 .text-center {
@@ -68,6 +90,13 @@ body {
   font-style: normal;
   font-size: 24px;
   line-height: 33px;
+
+  @include _768 {
+    font-size: 17px;
+    line-height: 23px;
+    padding: 10px 0;
+    padding-right: 80px
+  }
 }
 
 .accordion-item {
@@ -103,6 +132,13 @@ body {
 .accordion-body {
   color: #BDBDBD;
   padding: 40px 0 55px 0;
+
+  @include _768 {
+    font-size: 17px;
+    line-height: 23px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
 }
 
 .accordion-button::after {
@@ -116,11 +152,14 @@ body {
   transform: rotate(90deg);
   transition: .5s;
   right: 20px;
+
+  @include _768 {
+    width: 20px;
+  }
 }
 
 .accordion-button:not(.collapsed)::after {
   background-image: none;
-  //transform: rotate(90deg);
 }
 
 .accordion-button::before {
@@ -131,5 +170,9 @@ body {
   position: absolute;
   transition: .5s;
   right: 20px;
+
+  @include _768 {
+    width: 20px;
+  }
 }
 

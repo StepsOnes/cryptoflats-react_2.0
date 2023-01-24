@@ -1,17 +1,18 @@
+@import "../../../assets/scss/mixin";
+
 .title {
   margin-bottom: 50px;
-}
 
-.ac-header {
-  border-top: 1px solid #FFF;
-  font-weight: 700;
-  padding: 7px 0 17px 0;
-  cursor: pointer;
-  position: relative;
-  background: none;
+  @include _768 {
+    margin-bottom: 30px;
+  }
 }
 
 .faq {
   position: relative;
   margin-top: 130px;
+
+  @include _768 {
+    margin-top: 60px;
+  }
 }

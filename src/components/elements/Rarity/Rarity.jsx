@@ -23,7 +23,7 @@ const Rarity = (props) => {
             <div className={styles.about}>
                 <div className="container">
                     <h1 className={classNames(styles.title, "section-title text-center")}>
-                        RARITY PROPERTIES
+                        RARITY
                     </h1>
 
                     <p className={classNames(styles.text, "text-center")}>

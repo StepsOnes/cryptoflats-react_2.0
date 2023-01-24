@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import styles from './Faq.module.scss'
 import classNames from "classnames";
-import {dataFaq} from "../../../data/dataFaq";
+import { dataFaq } from "../../../data/dataFaq";
 
 const Faq = () => {
     return (

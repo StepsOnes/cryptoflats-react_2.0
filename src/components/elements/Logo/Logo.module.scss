@@ -1,4 +1,5 @@
 @import "../../../assets/scss/var";
+@import "../../../assets/scss/mixin";
 
 .logo {
   position: relative;
@@ -8,6 +9,10 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 45px;
+
+  @include _768 {
+    font-size: 18px;
+  }
 }
 
 .about {
@@ -15,6 +20,10 @@
   font-size: 14px;
   line-height: 19px;
   max-width: 200px;
+
+  @include _1024 {
+    display: none;
+  }
 }
 
 .key {
@@ -29,6 +38,13 @@
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  @include _768 {
+    width: 46px;
+    height: 44px;
+    top: -15px;
+    left: -30px;
   }
 }
 

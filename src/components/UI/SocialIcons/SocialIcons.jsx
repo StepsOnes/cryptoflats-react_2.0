@@ -5,7 +5,7 @@ import {dataLinks} from "../../../data/dataLinks";
 
 const SocialIcons = (props) => {
     return (
-        <ul className={styles['social-icons']}>
+        <ul className={props.class}>
             {dataLinks.map((item, index) => {
                 return <li key={`icon ${index}`}>
                     <a href={item.link}>

@@ -4,21 +4,35 @@
 .navbar {
   padding: 80px 0 40px 0;
   background: $header-bg;
+  position: relative;
+  z-index: 1001;
+
+  @include _1200 {
+    padding: 25px 0;
+  }
+
+  @include _768 {
+    padding: 40px 0 15px 0;
+  }
 }
 
 .container {
-  padding: 0 16px;
+  padding: 0 45px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 
   @include _2560 {
-    max-width: 1950px;
+    max-width: 1890px;
   }
 
   @include _1980 {
-    max-width: 1250px;
+    max-width: 1160px;
+  }
+
+  @include _1200 {
+    align-items: center;
   }
 }
 
@@ -32,10 +46,132 @@
     color: #FFF;
     text-decoration: none;
   }
+
+  @include _1200 {
+    display: none;
+  }
 }
 
 .wrapper {
   display: flex;
   gap: 75px;
   align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+
+  li > a >img {
+    width: 30px;
+    height: 30px;
+  }
+
+  @include _1024 {
+    display: none;
+  }
+}
+
+.menu-btn {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index:2;
+  overflow: hidden;
+  display: none;
+
+  span {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    transition: all 0.3s linear;
+
+    &:nth-of-type(2) {
+      top: calc(50% - 10px);
+    }
+
+    &:nth-of-type(3) {
+      top: calc(50% + 10px);
+    }
+  }
+
+  &.active {
+    span {
+      &:nth-of-type(1) {
+        width: 0;
+      }
+
+      &:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(45deg);
+      }
+
+      &:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, 0%) rotate(-45deg);
+      }
+    }
+  }
+
+  @include _1024 {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(45, 45, 45, 0.97);
+  top: 0;
+  z-index: 1000;
+  padding-top: 20%;
+  transform: translateX(-100%);
+  transition: 0.4s ease-out;
+  display: none;
+
+  &.visible {
+    transform: translateX(0%);
+  }
+
+  @include _1024 {
+    display: block;
+  }
+
+  @include _768 {
+    padding-top: 40%;
+  }
+}
+
+.mob-nav {
+  padding-left: 20%;
+  li {
+    a {
+      text-decoration: none;
+      color: #FFF;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 44px;;
+    }
+  }
+}
+
+.social-icons-mn {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  align-items: center;
+  margin-top: 60px;
+
+  li > a >img {
+    width: 40px;
+    height: 40px;
+  }
+
+
 }

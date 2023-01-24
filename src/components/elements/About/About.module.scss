@@ -1,4 +1,5 @@
 @import "../../../assets/scss/var";
+@import "../../../assets/scss/mixin";
 
 .about {
   height: 780px;
@@ -9,9 +10,18 @@
 .title {
   color: $text-yellow;
   margin-bottom: 50px;
+
+  @include _768 {
+    margin-bottom: 24px;
+  }
 }
 
 .text {
   max-width: 980px;
   margin: 0 auto 100px auto;
+  text-align: center;
+
+  @include _768 {
+    text-align: left;
+  }
 }

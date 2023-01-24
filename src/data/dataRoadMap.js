@@ -3,7 +3,7 @@ export const dataRoadMap = [
         class: "turquoise",
         classTitle: "turquoise-b",
         progress: "20%",
-        headerTitle: "CREATING OF 3D CONTENT FOR THE ROOMS",
+        headerTitle: "CREATING OF ISOMETRIC ROOMS",
         titleBody: "Q4 2022 - Q2 2023",
         listText: [
             "DROP #1 - 5555 NFT isometric Living Rooms",

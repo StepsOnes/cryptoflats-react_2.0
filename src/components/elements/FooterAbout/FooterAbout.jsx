@@ -14,7 +14,7 @@ const FooterAbout = (props) => {
                 <span>© 2022 Cryptoflats</span> All Rights Reserved
             </div>
 
-            <SocialIcons />
+            <SocialIcons class={styles['social-icons']}/>
         </div>
     );
 }

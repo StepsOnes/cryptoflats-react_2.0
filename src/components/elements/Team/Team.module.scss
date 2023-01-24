@@ -1,9 +1,23 @@
+@import "../../../assets/scss/mixin";
+
+.team {
+  padding-bottom: 120px !important;;
+
+  @include _768 {
+    padding-bottom: 60px !important;
+  }
+}
+
 .title {
   color: #AEDC2D;
 }
 
 .title-box {
   margin-bottom: 70px;
+
+  @include _768 {
+    margin-bottom: 30px;
+  }
 }
 
 .text {
@@ -15,6 +29,10 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 200px;
+
+  @include _1024 {
+    gap: 65px;
+  }
 }
 
 .persons-card {
@@ -27,6 +45,18 @@
 .about {
   margin-top: 60px;
   max-width: 252px;
+
+  @include _768 {
+    margin-top: 35px;
+  }
+}
+
+.person-name {
+  font-weight: 700;
+}
+
+.position {
+  margin-top: 3px;
 }
 
 .img {
@@ -38,6 +68,11 @@
     max-width: 100%;
     height: auto;
     border-radius: 50%;
+  }
+
+  @include _768 {
+    max-width: 200px;
+    max-height: 200px;
   }
 }
 

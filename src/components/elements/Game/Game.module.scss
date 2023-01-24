@@ -1,5 +1,11 @@
+@import "../../../assets/scss/mixin";
+
 .title {
   margin-bottom: 55px;
+
+  @include _768 {
+    margin-bottom: 30px;
+  }
 }
 
 .game {
@@ -8,10 +14,18 @@
 
 .text {
   margin-bottom: 120px;
+
+  @include _768 {
+    margin-bottom: 60px;
+  }
 }
 
 .game-place {
   position: relative;
+
+  @include _1400 {
+    display: none;
+  }
 }
 
 .room {
@@ -98,4 +112,17 @@
   top: 58%;
   left: 53%;
   transform: translate(-58%, -53%);
+}
+
+.game-animation {
+  align-items: center;
+  display: none;
+
+  @include _1400 {
+    display: block;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }

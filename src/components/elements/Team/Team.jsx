@@ -6,7 +6,7 @@ import {dataPersonsCard} from "../../../data/dataPersonsCard";
 
 const Team = (props) => {
     return (
-        <section id={"team"} className={classNames("section-padding")}>
+        <section id={"team"} className={classNames(styles.team, "section-padding")}>
             <div className="container">
                 <div className={classNames("title-box", styles["title-box"])}>
                     <h1 className={classNames(styles.title, "section-title")}>

@@ -5,7 +5,7 @@ import buildAnimation from "../../../assets/video/Building-animation.webp";
 
 const Story = (props) => {
     return (
-        <section className={"section-padding"}>
+        <section className={classNames(styles.story, "section-padding")}>
             <div className="container">
                 <div className={classNames("title-box", styles["title-box"])}>
                     <h1 className={classNames(styles.title, "section-title")}>

@@ -12,8 +12,13 @@
   }
 
   @include _1980 {
-    max-width: 205px;
-    max-height: 205px;
+    max-width: 216px;
+    max-height: 216px;
+  }
+
+  @include _1024 {
+    max-width: 130px;
+    max-height: 130px;
   }
 }
 

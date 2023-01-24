@@ -1,17 +1,43 @@
+@import "../../../assets/scss/mixin";
+
+.story {
+  padding-top: 120px !important;
+
+  @include _768 {
+    padding-top: 60px !important;
+  }
+}
+
 .title {
   color: #CA47D6;
 }
 
 .title-box {
   margin-bottom: 70px;
+
+  @include _768 {
+    margin-bottom: 30px;
+  }
 }
 
 .group {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include _1200 {
+    justify-content: center;
+  }
 }
 
 .text {
   max-width: 540px;
+  margin-bottom: 60px;
+}
+
+.animation {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }

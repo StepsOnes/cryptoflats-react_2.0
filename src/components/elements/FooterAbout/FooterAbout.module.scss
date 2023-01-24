@@ -1,8 +1,15 @@
+@import "../../../assets/scss/mixin";
+
 .footer-about {
   margin-top: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include _1024 {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
 }
 
 .terms {
@@ -37,5 +44,16 @@
       right: -10px;
       border-radius: 50%;
     }
+  }
+}
+
+.social-icons {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+
+  li > a >img {
+    width: 30px;
+    height: 30px;
   }
 }
